@@ -1,0 +1,7 @@
+参考https://docs.angularjs.org/api/ngRoute/service/$route#example
+例子做路由
+页面下面导航四个内容：backlog,todo,inprogress,done
+参考项目中ng.app.js
+
+运行file:///D:/projects/efficientTask/index.html
+出错
