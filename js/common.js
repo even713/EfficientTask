@@ -1,2 +1,0 @@
-var et = {};
-et.modules = {};

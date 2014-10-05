@@ -1,24 +1,30 @@
 'use strict';
 
+var et = {};
+et.modules = {};
+
 /* App Module */
 
-var phonecatApp = angular.module('phonecatApp', [
-  'ngRoute',
-  'phonecatControllers'
-]);
+et.modules.mainApp = angular.module('mainApp', ['ngRoute', 'et.modules.controllers']);
 
-phonecatApp.config(['$routeProvider',
-  function($routeProvider) {
-    $routeProvider.
-      when('/phones', {
-        templateUrl: 'partials/phone-list.html',
-        controller: 'PhoneListCtrl'
-      }).
-      when('/phones/:phoneId', {
-        templateUrl: 'partials/phone-detail.html',
-        controller: 'PhoneDetailCtrl'
-      }).
-      otherwise({
-        redirectTo: '/phones'
-      });
-  }]);
+et.modules.mainApp.config(function($routeProvider) {
+  $routeProvider
+   .when('/backlog', {
+    //templateUrl: 'views/backlog.html',
+	template: '<div>back log view {{name}}</div>',
+    controller: 'backlogController'
+    }
+  )
+  .when('/todo', {
+    //templateUrl: 'views/todo.html',
+	template: '<div>todo view {{name}}</div>',
+    controller: 'todoController'
+  }).
+  otherwise({
+	redirectTo: '/backlog'
+  });
+});
+
+/* Controllers */
+
+et.modules.controllers = angular.module('et.modules.controllers', []);
