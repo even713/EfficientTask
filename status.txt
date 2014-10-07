@@ -5,3 +5,10 @@
 
 运行file:///D:/projects/efficientTask/index.html
 出错
+
+--
+10、7
+配置好nodejs
+可以从服务器运行。
+http://localhost:3000/htmls/index.html
+如需要使http://localhost: 3000默认指向那个页面，需要到views/index.js里面改
