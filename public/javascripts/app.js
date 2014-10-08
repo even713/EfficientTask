@@ -19,7 +19,18 @@ et.modules.mainApp.config(function($routeProvider) {
     templateUrl: '../htmls/views/todo.html',
 	//template: '<div>todo view {{name}}</div>',
     controller: 'todoController'
-  }).
+  })
+    .when('/plan', {
+    templateUrl: '../htmls/views/plan.html',
+	//template: '<div>back log view {{name}}</div>',
+    controller: 'planController'
+    }
+  )
+  .when('/done', {
+    templateUrl: '../htmls/views/done.html',
+	//template: '<div>todo view {{name}}</div>',
+    controller: 'doneController'
+  }). 
   otherwise({
 	redirectTo: '/backlog'
   });

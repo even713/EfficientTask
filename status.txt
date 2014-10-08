@@ -12,3 +12,12 @@
 可以从服务器运行。
 http://localhost:3000/htmls/index.html
 如需要使http://localhost: 3000默认指向那个页面，需要到views/index.js里面改
+npm install
+npm start
+---
+10.8
+使用'getList' service作为通用获取数据入口，以后改造为数据库连接，传类型(todo/backlog)和orderBy（时间，优先级）就可以获得列表。
+使用'getBacklog' service，需要这个servcie吗？也许可以删除。
+使用controller调用service获取数据。
+TODO：新建backlog。写service写入数据。
+TODO：将数据在页面上列表显示table，backlog需要分页吗？backlog也许需要大类来帅选？

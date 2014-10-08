@@ -8,18 +8,22 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<!-- Basic Styles -->
-		<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/common.css">
 
 	</head>
 	<body class="">
 		<div ng-view>
 		</div>
-		<ul>
-			<li><a href="#/backlog">BackLog</a></li>
+		<ul class="bottom-navigation">
+			<li><a href="#/backlog">BACKLOG</a></li>
+			<li><a href="#/backlog">PLAN</a></li>
 			<li><a href="#/todo">TODO</a></li>
+			<li><a href="#/backlog">DONE</a></li>
 		</ul>
 		<script src="../javascripts/libs/jquery-2.0.2.min.js"></script>
 		<script src="../javascripts/libs/jquery-ui-1.10.3.min.js"></script>
+		<script src="../javascripts/plugin/jquery.session.js"></script>
 
 		<!-- BOOTSTRAP JS -->
 		<script src="../javascripts/libs/bootstrap/bootstrap.min.js"></script>	
@@ -31,6 +35,8 @@
 
 		<!-- MAIN ANGULAR JS FILE -->
 	  	<script src="../javascripts/app.js"></script>
+		<!-- Services -->
+		<script src="../javascripts/services/backlogService.js"></script>
 		
 		<!-- Controllers -->
 		<script src="../javascripts/controllers/todoController.js"></script>
