@@ -21,3 +21,13 @@ npm start
 使用controller调用service获取数据。
 TODO：新建backlog。写service写入数据。
 TODO：将数据在页面上列表显示table，backlog需要分页吗？backlog也许需要大类来帅选？
+
+---
+2700
+180
+
+http://www.youtube.com/watch?v=nh9EARpk-dc
+TODO:
+拉一下代码看看https://github.com/driftyco/ionic-weather能否跑起来，能成为app吗
+https://github.com/driftyco/ionic-contrib-header-shrink
+v.s. http://foundation.zurb.com/docs/index.html
